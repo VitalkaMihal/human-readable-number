@@ -19,7 +19,7 @@ module.exports = function toReadable (number) {
        if (number % 100 === 0){
            return arr19[+arr[0]] + ' ' + 'hundred';
        } else {
-     return arr19[+arr[0]] + ' ' + 'hundred' + ' ' + moduleexports(number % 100);
+     return arr19[+arr[0]] + ' ' + 'hundred' + ' ' + module.exports(number % 100);
    }
   }
 }
