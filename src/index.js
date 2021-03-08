@@ -9,7 +9,11 @@ module.exports = function toReadable (number) {
    } else if ( 10 <= number && number <=19) {
      return arr1019[number - 10];
    } else if (20 <= number && number <= 99) {
+    if (+arr[1] === 0) {
+        return arr2090[+arr[0] - 2]; 
+      } else {
      return arr2090[+arr[0] - 2] + ' ' + arr19[+arr[1]];
+      }
    } else if ( 100 <= number && number <= 999) {
      return arr19[+arr[0]] + ' ' + arr100 + ' ' + moduleexports(number % 100);
    }
